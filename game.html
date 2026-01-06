@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Game | Tebak Gambar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="glass-nav">
+  <a href="index.html">Home</a>
+  <a href="game.html">Game</a>
+  <a href="gallery.html">Galeri</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<br>
+<section class="image-banner">
+<header class="banner-overlay">
+  <h1>🎮 Game Interaktif</h1>
+  <p>Kumpulan game sederhana berbasis JavaScript</p>
+</header>
+</section>
+
+<main>
+
+  <!-- PENJELASAN GAME -->
+  <section class="section">
+    <h2>📘 Tentang Halaman Game</h2>
+    <p>
+      Halaman ini berisi beberapa permainan sederhana yang dibuat menggunakan
+      JavaScript dasar. Setiap game dirancang untuk melatih logika,
+      interaksi pengguna, serta manipulasi DOM.
+    </p>
+  </section>
+<br>
+  <!-- GAME TEBAK GAMBAR -->
+  <section class="section highlight">
+    <h2>🖼️ Game Tebak Gambar</h2>
+    <p>Tebak gambar di bawah ini dengan memilih jawaban yang benar.</p>
+
+    <img src="cat.jpeg" class="foto" alt="Tebak Gambar">
+    <br><br>
+
+    <button onclick="jawabanBenar()">Tebak: Kucing</button>
+    <button onclick="jawabanSalah()">Tebak: Anjing</button>
+
+    <p id="hasilGambar"></p>
+  </section>
+<br>
+<br>
+∘₊✧──────✧₊∘
+<br>
+<br>
+  <!-- TOMBOL ISENG + HITUNG TAWA -->
+  <section class="section">
+    <h2>😂 Tombol Iseng & Hitung Tawa</h2>
+    <p>Klik tombol di bawah ini untuk iseng. Setiap klik akan menambah jumlah tawa.</p>
+
+    <button onclick="tambahTawa()">🤣 Klik Aku!</button>
+    <p>Total Tawa: <strong><span id="tawa">0</span></strong></p>
+  </section>
+<br>
+<br>
+∘₊✧──────✧₊∘
+<br>
+<br>
+  <!-- GAME TEBAK ANGKA -->
+  <section class="section">
+    <h2>🔢 Game Tebak Angka</h2>
+    <p>Sistem memilih angka 1–5. Coba tebak!</p>
+
+    <input type="number" id="inputAngka" placeholder="Masukkan angka 1-5">
+    <br><br>
+    <button onclick="tebakAngka()">Tebak Angka</button>
+
+    <p id="hasilAngka"></p>
+  </section>
+<br>
+<br>
+∘₊✧──────✧₊∘
+<br>
+<br>
+  <!-- GAME KLIK CEPAT -->
+  <section class="section highlight">
+    <h2>⚡ Game Klik Cepat</h2>
+    <p>Klik tombol sebanyak-banyaknya!</p>
+
+    <button onclick="klikCepat()">⚡ Klik!</button>
+    <p>Skor Klik: <strong><span id="skor">0</span></strong></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 | Zidni Ilman | 251011700067 | 01SIFP001</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
